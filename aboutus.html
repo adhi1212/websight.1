@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Lobster', cursive;
+            color: aliceblue;
+        }
+        .wrapper{
+            width: 100%;
+            min-height: 100vh;
+            overflow: hidden;
+            background-image: url(./rb.jpg.webp);
+        }
+        .row{
+            width: 100%;
+            padding: 50px 100px;
+        }
+        .image-section{
+            width: 30%;
+            float: left;
+        }
+        .image-section img{
+            width: 100%;
+            height: auto;
+        }
+        .content{
+            width: 60%;
+            float: left;
+            margin-left: 50px;
+        }
+        .content h1{
+            font-size: 90px;
+            letter-spacing: 3.5px;
+            margin-top: 25px;
+            color: whitesmoke;
+        }
+        .content p{
+            font-size: 20px;
+            font-family: serif;
+            margin-top: 10px;
+            line-height: 1.5;
+        }
+        @media screen and (max-width: 768px){
+            .image-section{
+                width: 100%;
+                float: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+      <div class="row">
+        <div class="image-section">
+          <img src="./BOOOKIT.COM LOGO.png" alt="">
+        </div>
+        <div class="content">
+            <h1>About Us</h1>
+            <p>Bookit is a ticket booking website. The user can book tickets for movies, shows, events, sports and also can book tickets for travelling!!..This is a safe ticket booking website and the transactions will occur safely!!</p>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

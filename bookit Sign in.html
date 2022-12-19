@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family:'poppins', sans-serif;
+            box-sizing: border-box;
+        }
+        .hero{
+            width: 100%;
+            min-height: 100vh;
+            background-image: url(./rb.jpg.webp);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .hero h1{
+             color: azure;
+             font-weight: 500;
+             margin-bottom: 40px;
+        }
+        .hero h2{
+            color:white ;
+            font-weight: 250;
+            margin-bottom: 40px;
+        }
+        .signup-box{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 90%;
+            max-width: 800px;
+            background: #fff;
+        }
+        .left-box{
+            padding: 50px;
+            background: black;
+            flex-basis: 50%;
+            flex-grow: 1;
+            color: #fff;
+        }
+        .right-box{
+            padding: 50px;
+            flex-basis: 50%;
+            flex-grow: 1;
+        }
+        .input-box{
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #fff;
+            outline: none;
+            color: #fff;
+            font-size: 12px;
+            background: transparent;
+        }
+        ::placeholder{
+            color: white;
+        }
+        input[type=checkbox]{
+            margin-top: 30px;
+        }
+        .left-box label{
+            font-size: 14px;
+        }
+        .left-box button{
+            width: 100%;
+            background: red;
+            padding: 10px;
+            border: 0;
+            outline: none;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        .left-box button:hover{
+            font-weight: 500;
+            background: black;
+            color: red;
+        }
+        .right-box a{
+            display: block;
+            width: 100%;
+            margin: 20px 0;
+            min-width: 250px;
+            color: #fff;
+            font-size: 14px;
+            padding: 15px 30px;
+            text-decoration: none;
+            background: black;
+        }
+        .right-box a i{
+           font-size: 18px;
+           margin-right: 10px;
+        }
+        .login-msg{
+            color: #fff;
+            margin-top: 30px;
+            font-size: 15px;
+        }
+        .login-msg a{
+            color: #ea4335;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+          <h1>BOOKIT</h1>
+          <h2>Create an account</h2>
+    <div class="signup-box">
+    <div class="left-box">
+        <form>
+            <input type="text" placeholder="Your Name" required class="input-box">
+            <input type="text" placeholder="Username" required class="input-box">
+            <input type="email" placeholder="Your email id" required class="input-box">
+            <input type="password" placeholder="Create Password" required class="input-box">
+            <input type="checkbox" id="terms">
+            <label for="terms">I accept the Terms & Conditions</label>
+            <button type="Submit">SIGN UP </button>
+        </form>
+    </div>
+    <div class="right-box">
+        <a href="">Connect with Google</a>
+        <a href="">Connect with Facebook</a>
+        <a href="">Connect with Twitter</a>
+    </div>
+    </div>
+    <p class="login-msg">I already have an Account? <a href="file:///C:/Users/rsadh/OneDrive/Documents/Assignment%202.html/login1.html">Login Now</a></p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,241 @@
+<html>
+    <head>
+        <title>bookit sports</title>
+    </head>
+    <style>
+        /* top bar */
+        .top-bar{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1.5rem 1rem;
+        }
+        .navigation{
+            display: flex;
+            list-style: none;
+        }
+        .left-content{
+            display: flex;
+            align-items: center;
+        }
+        a{
+            text-decoration: none;
+            color: gainsboro;
+        }
+        .btn{
+            display: inline-block;
+            padding: .5rem 1rem;
+            background-color: black;
+            border-radius: 2rem;
+            color: red;
+            transition: .3s;
+        }
+        .btn-1{
+            width: 100%;
+            text-align: center;
+        }
+        body{
+            background-image: url(./rb.jpg.webp);
+            background-repeat: no-repeat;
+        }
+        h2{
+            color: aliceblue;
+        }
+        .navigation li{
+            margin-right: 1rem;
+        }
+        .active{
+            color: white;
+        }
+        .navigation li a:hover{
+            color: red;
+        }
+        /* main container */
+        .main-container{
+            color: white;
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            gap: 2rem;
+        }
+        /* sidebar */
+        .sidebar{
+            background: linear-gradient(45deg, rgba(255, 255, 225, .05), rgba(205, 140, 56, .15));
+            backdrop-filter: blur(5px);
+            height: fit-content;
+            border-radius: 1rem;
+            padding: 2rem 2.5rem;
+            cursor: pointer;
+        }
+        .sidebar-groups{
+            margin-bottom: 1rem;
+        }
+        .sg-title{
+            margin-bottom: .5rem;
+            color: white;
+        }
+        input{
+            margin-bottom: .6rem;
+        }
+        input[type=checkbox]:checked{
+            accent-color: red;
+        }
+        label{
+            margin-left: .5rem;
+        }
+        /* movies container */
+        .upcoming-img-box{
+            position: relative;
+            height: 650px;
+            width: 100%;
+            border-radius: 1rem;
+            overflow: hidden;
+            margin-bottom: 1.5rem;
+        }
+        .upcomng-title{
+            position: absolute;
+            top: 2rem;
+            left: 2rem;
+            color: yellow;
+            background-color: black;
+            padding: .5rem 1rem;
+            border-radius: 2rem;
+            border: 1px solid yellow;
+            font-weight: 500;
+        }
+        .buttons{
+            position: absolute;
+            bottom: 2rem;
+            left: 2rem;
+        }
+        .btn-alt{
+            background-color: black;
+            color:red;
+            border: 1px solid red;
+            margin-left: 1rem;
+        }
+        .btn:hover{
+            background-color:gray;
+        }
+        .btn-alt:hover{
+            color: black;
+            background-color: gray;
+        }
+        /* current movies */
+        .movies-container{
+            padding-bottom: 2rem;
+        }
+                
+        .current-movies{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 1.5rem;
+        }
+        .cm-img-box{
+            position: relative;
+            height: 150px;
+            width: auto;
+            margin-bottom: 1rem;
+            border-radius: .5rem;
+            overflow: hidden;
+        }
+        .current-movie{
+            background: linear-gradient(45deg, rgba(255, 255, 225, .05), rgba(205, 140, 56, .15));
+            padding: 1rem;
+            border-radius: .5rem;
+        }
+        .movie-title{
+            color: white;
+            margin-bottom: .2rem;
+        }
+        .booking{
+             display: flex;
+             align-items: center;
+             justify-content: space-between;
+             margin-top: 1rem;
+        }
+    </style>
+    <body>
+        <section class="top-bar">
+        <div class="left-content">
+        <h2 class="title">BOOKIT</h2>
+        <ul class="navigation">
+        <li><a href="file:///C:/Users/rsadh/OneDrive/Documents/Assignment%202.html/Bookit.html">HOME</a></li>
+        <li><a class="active" href="">SPORTS</a></li>
+        <li><a href="">HELP</a></li>
+        </ul>
+        </div>
+        <div class="right-content">
+        <img src="" alt="">
+        </div>
+        </section>
+        <section class="main-container">
+        <div class="sidebar">
+        <form action="">
+            <div class="sidebar-groups">
+            <h3 class="sg-title">Categories</h3>
+            <input type="checkbox" id="cricket" name="cricket" value="cricket">
+            <label for="cricket">Cricket</label><br>
+            <input type="checkbox" id="football"name="football" value="football">
+            <label for="football">Football</label><br>
+            <input type="checkbox" id="kabaddi" name="kabaddi" value="kabaddi">
+            <label for="kabaddi">Kabaddi</label><br>
+            <input type="checkbox" id="hockey" name="hockey" value="hockey">
+            <label for="hockey">Hockey</label><br>
+            <input type="checkbox" id="tennis" name="tennis" value="tennis">
+            <label for="tennis">Tennis</label><br>
+            <input type="checkbox" id="badminton" name="badminton" value="badminton">
+            <label for="badminton">Badminton</label><br>
+            <input type="checkbox" id="athletics" name="athletics" value="athletics">
+            <label for="athletics">Athletics</label><br>
+            <input type="checkbox" id="boxing" name="boxing" value="boxing">
+            <label for="boxing">Boxing</label><br>
+            <input type="checkbox" id="others" name="others" value="others">
+            <label for="others">Others</label><br>
+            </div>
+
+            
+        </form>
+        </div>
+        <div class="movies-container">
+          <div class="upcoming-img-box">
+              <img src="./t20.jpg" alt="" width="1140cm">
+              <p class="upcoming-title">Upcoming Event</p>
+          <div class="buttons">
+            <a href="" class="btn">Remind me</a>
+            <a href="" class="btn-alt btn">Book</a>
+        </div>
+        </div>
+        <div class="current-movies">
+            <div class="current-movie">
+             <div class="cm-img-box">
+                <img src="./fifa.jpg" alt="" height="350cm" width="250cm">
+             </div>
+             <h3 class="movie-title">Fifa World cup</h3>
+             <div class="booking">
+              <a href="" class="btn">Book</a>
+             </div>
+            </div>
+            <div class="current-movies">
+                <div class="current-movie">
+                 <div class="cm-img-box">
+                    <img src="./tennis.jpg" alt="" height="350cm" width="250cm">
+                 </div>
+                 <h3 class="movie-title">Wimbledon</h3>
+                 <div class="booking">
+                  <a href="" class="btn">Book</a>
+                 </div>
+                </div>
+                <div class="current-movies">
+                    <div class="current-movie">
+                     <div class="cm-img-box">
+                        <img src="./pkl.png" alt="" height="250cm" width="250cm">
+                     </div>
+                     <h3 class="movie-title">Pro Kabaddi League</h3>
+                     <div class="booking">
+                      <a href="" class="btn">Book</a>
+                     </div>
+                    </div>
+        </div>
+        </section>
+    </body>
+</html>
